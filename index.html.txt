@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CS2 Skin Viewer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+CS2 SKIN VIEWER
+</header>
+
+<div class="filters">
+
+<button onclick="filterRarity('all')">Все</button>
+<button onclick="filterRarity('Covert')">Covert</button>
+<button onclick="filterRarity('Classified')">Classified</button>
+<button onclick="filterRarity('Restricted')">Restricted</button>
+
+</div>
+
+<div class="container" id="skins"></div>
+
+
+<div class="modal" id="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal()">✖</span>
+
+<h2 id="modalName"></h2>
+
+<div id="viewer"></div>
+
+<p id="modalDesc"></p>
+
+<h3 id="modalPrice"></h3>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
